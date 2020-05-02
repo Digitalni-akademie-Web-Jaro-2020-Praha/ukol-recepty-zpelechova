@@ -15,7 +15,7 @@ tablety:
 notebook/pc:
 @media (min-width: 860px) {
 }
-*/
+*/ 
 
 
 body {
@@ -37,4 +37,54 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+body{
+    color: white;
+}
+
+.recepty{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recept{
+    margin: 1px;
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90px;
+    width: 100vw;
+    background-position: center;
+}
+
+.hlavni_recept{
+    background-image: url("images/salat.jpg");
+    min-height: 200px
+}
+
+.recept_2{
+    background-image: url("images/chlebicek.jpg");
+}
+
+.recept_3{
+    background-image: url("images/tacos.jpg");
+}
+
+.recept_4{
+    background-image: url("images/cizrna.jpg");
+}
+
+.recept_5{
+    background-image: url("images/burger.jpg");
+}
+.kategorie{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.nazev{
+    font-size: 20px;
+    align-self: flex-end;
+}
+
 
