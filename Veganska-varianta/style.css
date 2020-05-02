@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -15,76 +20,117 @@ tablety:
 notebook/pc:
 @media (min-width: 860px) {
 }
-*/ 
-
+*/
 
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
-body{
-    color: white;
+body {
+  color: white;
 }
 
-.recepty{
-    display: flex;
-    flex-wrap: wrap;
+.recepty {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.recept{
-    margin: 1px;
-    padding: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 90px;
+.recept {
+  margin: 0.2%;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90px;
+  width: 100vw;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.hlavni_recept {
+  background-image: url("images/salat.jpg");
+  min-height: 200px;
+}
+
+.recept_2 {
+  background-image: url("images/chlebicek.jpg");
+}
+
+.recept_3 {
+  background-image: url("images/tacos.jpg");
+}
+
+.recept_4 {
+  background-image: url("images/cizrna.jpg");
+}
+
+.recept_5 {
+  background-image: url("images/burger.jpg");
+}
+
+.nazev {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+
+.hlavni_recept .nazev {
+  font-size: 20px;
+}
+
+.popisky {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 480px) {
+  .recept {
+    min-height: 150px;
+    width: 49.6%;
+  }
+  .hlavni_recept {
+    min-height: 250px;
     width: 100vw;
-    background-position: center;
+  }
+  .nazev {
+    font-size: 22px;
+  }
+  .hlavni_recept .nazev {
+    font-size: 36px;
+  }
 }
 
-.hlavni_recept{
-    background-image: url("images/salat.jpg");
-    min-height: 200px
+@media (min-width: 860px) {
+  .recept {
+    min-height: 200px;
+    width: 33vw;
+  }
+  .hlavni_recept {
+    min-height: 400px;
+    width: 33vw;
+  }
+  .nazev {
+    font-size: 28px;
+  }
+  .hlavni_recept .nazev {
+    font-size: 48px;
+  }
 }
-
-.recept_2{
-    background-image: url("images/chlebicek.jpg");
-}
-
-.recept_3{
-    background-image: url("images/tacos.jpg");
-}
-
-.recept_4{
-    background-image: url("images/cizrna.jpg");
-}
-
-.recept_5{
-    background-image: url("images/burger.jpg");
-}
-.kategorie{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-}
-
-.nazev{
-    font-size: 20px;
-    align-self: flex-end;
-}
-
-
