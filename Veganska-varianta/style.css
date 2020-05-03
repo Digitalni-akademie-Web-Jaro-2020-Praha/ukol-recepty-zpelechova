@@ -50,7 +50,6 @@ body {
 }
 
 .recept {
-  margin: 0.2%;
   padding: 10px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,6 +60,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   text-shadow: 1px 1px 2px #000000;
+  border: 1px solid white;
 }
 
 .hlavni_recept {
@@ -104,12 +104,18 @@ body {
 @media (min-width: 480px) {
   .recept {
     min-height: 150px;
-    width: 49.6%;
+    width: 50vw;
   }
   .hlavni_recept {
     min-height: 250px;
     width: 100vw;
   }
+
+  .male_recepty {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .nazev {
     font-size: 22px;
   }
@@ -120,17 +126,23 @@ body {
 
 @media (min-width: 860px) {
   .recept {
-    min-height: 200px;
-    width: 33vw;
+    height: 200px;
+    width: 30vw;
   }
   .hlavni_recept {
     min-height: 400px;
-    width: 33vw;
+    width: 33vw;  
   }
   .nazev {
     font-size: 28px;
   }
   .hlavni_recept .nazev {
     font-size: 48px;
+  }
+  .male_recepty {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 67vw;
   }
 }
