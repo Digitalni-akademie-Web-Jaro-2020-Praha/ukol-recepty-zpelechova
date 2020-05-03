@@ -128,8 +128,9 @@ body {
 @media (min-width: 860px) {
   .recept {
     height: 200px;
-    width: 30vw;
+    width: 33vw;
     padding: 20px;
+    flex-grow: 1;
   }
   .hlavni_recept {
     min-height: 400px;
